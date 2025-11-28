@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oinatz Docampo - Peluquero Profesional</title>
-    <meta name="description" content="Servicios de peluquería profesional a domicilio. Cortes de pelo, barba y más. ¡Pide tu cita ahora!">
+    <title>Oinatz Docampo - Peluquero Profesional | Peluquería a Domicilio en Errenteria</title>
+    <meta name="description" content="Peluquero profesional con 16 años de experiencia. Cortes modernos, servicio a domicilio en Errenteria. Especialista en estilos juveniles y cortes de calidad. 💈‍♂️">
+    <meta name="keywords" content="peluquero Errenteria, corte de pelo, barbería, peluquería a domicilio, Oinatz Docampo, cortes modernos, estilo juvenil">
+    <meta name="author" content="Oinatz Docampo">
+    <meta property="og:title" content="Oinatz Docampo - Peluquero Profesional">
+    <meta property="og:description" content="Servicios de peluquería profesional a domicilio. Cortes de calidad desde los 16 años.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://docampobarber.com">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Oinatz Docampo Barber",
+        "description": "Servicios de peluquería profesional a domicilio",
+        "url": "https://docampobarber.com",
+        "telephone": "+34678119492",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Maria de Lezo, portal 3, 4 derecha",
+            "addressLocality": "Errenteria",
+            "addressCountry": "ES"
+        },
+        "openingHours": "Mo 16:45-19:30, Tu 17:30-19:30, Th 18:00-19:30",
+        "priceRange": "€10-€15",
+        "serviceType": "Hair Salon"
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -58,17 +88,24 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services" itemscope itemtype="https://schema.org/Service">
         <div class="container">
-            <h2 class="section-title">Mis Servicios</h2>
+            <h2 class="section-title">Mis Servicios <span class="title-accent">Profesionales</span></h2>
+            <p class="section-subtitle">Cortes modernos con estilo juvenil y atención personalizada</p>
             <div class="services-grid">
-                <div class="service-card" onclick="selectServiceAndNavigate()" style="cursor: pointer;">
+                <div class="service-card" onclick="selectServiceAndNavigate()" style="cursor: pointer;" itemprop="serviceType">
                     <div class="service-icon">
                         <i class="fas fa-cut"></i>
+                        <div class="icon-bg"></div>
                     </div>
                     <h3>Corte de Pelo</h3>
-                    <p>Corte moderno y personalizado según tu estilo</p>
+                    <p>Corte moderno y personalizado según tu estilo con técnica profesional y atención detallada</p>
                     <div class="price">10€</div>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Consulta de estilo</span>
+                        <span><i class="fas fa-check"></i> Corte preciso</span>
+                        <span><i class="fas fa-check"></i> Acabado perfecto</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,57 +177,61 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Mis Trabajos</h2>
+            <h2 class="section-title">Mis Trabajos <span class="title-accent">Recientes</span></h2>
+            <p class="section-subtitle">Echa un vistazo a algunos de mis cortes más recientes</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="images/corte1.jpg" alt="Corte Moderno" class="gallery-image">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/corte2.jpg" alt="Corte Clásico" class="gallery-image">
+                    <img src="images/corte2.jpg" alt="Estilo Clásico" class="gallery-image">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/corte3.jpg" alt="Estilo Juvenil" class="gallery-image">
+                    <img src="images/corte3.jpg" alt="Diseño Juvenil" class="gallery-image">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/corte4.jpg" alt="Corte Degradado" class="gallery-image">
+                    <img src="images/corte4.jpg" alt="Degradado Perfecto" class="gallery-image">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/corte5.jpg" alt="Corte Profesional" class="gallery-image">
+                    <img src="images/corte5.jpg" alt="Estilo Premium" class="gallery-image">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/corte6.jpg" alt="Estilo Moderno" class="gallery-image">
+                    <img src="images/corte6.jpg" alt="Trend 2024" class="gallery-image">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" itemscope itemtype="https://schema.org/LocalBusiness">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title">Contacto <span class="title-accent">Directo</span></h2>
+            <p class="section-subtitle">¿Listo para tu nuevo corte? Contáctame y reserva tu cita</p>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item" itemprop="telephone">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h3>Teléfono</h3>
-                            <a href="tel:+34678119492">+34 678 11 94 92</a>
+                            <h3>Teléfono / WhatsApp</h3>
+                            <a href="tel:+34678119492" itemprop="telephone">+34 678 11 94 92</a>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Ubicación</h3>
-                            <p>Errenteria, Maria de Lezo, portal 3, 4 derecha</p>
+                            <p itemprop="streetAddress">Maria de Lezo, portal 3, 4 derecha</p>
+                            <p itemprop="addressLocality">Errenteria, Guipúzcoa</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" itemprop="openingHours">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h3>Horario</h3>
-                            <p>Lunes: 16:45 - 19:30</p>
-                            <p>Martes: 17:30 - 19:30</p>
-                            <p>Jueves: 18:00 - 19:30</p>
+                            <h3>Horario de Atención</h3>
+                            <p><strong>Lunes:</strong> 16:45 - 19:30</p>
+                            <p><strong>Martes:</strong> 17:30 - 19:30</p>
+                            <p><strong>Jueves:</strong> 18:00 - 19:30</p>
+                            <p><em style="color: #666; font-size: 0.9rem;">Miércoles, Viernes, Sábado, Domingo: Cerrado</em></p>
                         </div>
                     </div>
                 </div>
@@ -223,11 +264,23 @@
                 </div>
                 <div class="footer-text">
                     <p>&copy; 2024 Oinatz Docampo. Todos los derechos reservados.</p>
-                    <p>Peluquero profesional con pasión por el estilo</p>
+                    <p>Peluquero profesional con pasión por el estilo 💈‍♂️</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Action Buttons -->
+    <a href="https://wa.me/34678119492?text=¡Hola! Quiero reservar una cita de peluquería" target="_blank" class="fab-whatsapp" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="#home" class="scroll-to-top" title="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
 
     <!-- Success Modal -->
     <div id="successModal" class="modal">

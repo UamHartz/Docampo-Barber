@@ -1,16 +1,19 @@
-# 🎨 Oinatz Docampo - Peluquero Profesional
+# 💈‍♂️ Oinatz Docampo - Peluquero Profesional Premium
 
-Una web moderna y profesional para el negocio de peluquería de Oinatz Docampo, peluquero de 16 años que trabaja de forma independiente.
+Una web moderna y ultra-profesional para el negocio de peluquería de Oinatz Docampo, peluquero con 16 años de experiencia que trabaja de forma independiente en Errenteria.
 
-## ✨ Características
+## ✨ Características Premium
 
-- 🎯 **Diseño Moderno**: Interfaz elegante y profesional con animaciones suaves
+- 🎯 **Diseño Moderno Premium**: Interfaz elegante con animaciones suaves y efectos visuales avanzados
 - 📱 **Totalmente Responsive**: Funciona perfectamente en móviles, tablets y ordenadores
-- 📅 **Sistema de Reservas Integrado**: Formulario de citas completo sin necesidad de apps externas
-- 💰 **Catálogo de Servicios**: Muestra clara de precios y servicios
-- 📞 **Contacto Directo**: Información de contacto fácilmente accesible
-- 🖼️ **Galería de Trabajos**: Espacio para mostrar los mejores cortes
-- ⚡ **Rápida y Ligera**: Optimizada para cargarse rápidamente
+- 📅 **Sistema de Reservas Inteligente**: Formulario de citas con validación avanzada y confirmaciones
+- 💰 **Catálogo de Servicios Ampliado**: 3 servicios principales con características detalladas
+- 📞 **Contacto Directo**: WhatsApp flotante y formulario de contacto con validación
+- 🖼️ **Galería Profesional**: Placeholders animados con efectos shimmer
+- ⚡ **Ultra Optimizada**: SEO mejorado, microdatos y rendimiento optimizado
+- 🎨 **Efectos Visuales**: Partículas flotantes, animaciones typing, parallax y micro-interacciones
+- 🔧 **Validación Avanzada**: Formularios con errores detallados y estados de carga
+- 📊 **Analytics Ready**: Estructura preparada para Google Analytics y herramientas de marketing
 
 ## 🚀 Cómo Usar
 
@@ -41,79 +44,110 @@ docampo barber/
 - Descripción profesional
 - Botones de acción directa
 
-### 3. Servicios
-- 4 tipos de servicios con precios
-- Tarjetas animadas con hover effects
-- Iconos representativos para cada servicio
+### 3. Servicios Premium
+- **Corte de Pelo Premium** (10€): Corte moderno con consulta de estilo
+- **Corte + Arreglo Barba** (15€): Combo completo con diseño de barba
+- **Estilo Juvenil Moderno** (12€): Últimas tendencias con degradados técnicos
+- Tarjetas animadas con hover effects avanzados
+- Iconos con fondos animados y características detalladas
 
-### 4. Sistema de Reservas
-- Formulario completo con validaciones
-- Selector de fechas (no permite domingos)
-- Horarios disponibles
-- Confirmación con modal animado
+### 4. Sistema de Reservas Inteligente
+- Formulario completo con validación avanzada en tiempo real
+- Selector de fechas (solo permite lunes, martes y jueves)
+- Horarios dinámicos según día seleccionado
+- Confirmación con modal animado y efectos de carga
+- Almacenamiento local con timestamps
 
-### 5. Galería
-- Espacio para mostrar fotos de trabajos
-- Diseño de grid responsive
-- Efectos hover en las imágenes
+### 5. Galería Profesional
+- 6 placeholders animados con efectos shimmer
+- Diseño de grid responsive con hover effects
+- Efectos de escala y brillo en las tarjetas
+- Sistema lightbox para visualización ampliada
 
-### 6. Contacto
-- Información de contacto directa
-- Formulario de mensajes
-- Enlace para llamada automática
+### 6. Contacto Directo
+- WhatsApp flotante con animación pulse
+- Botón de scroll-to-top inteligente
+- Formulario de contacto con validación avanzada
+- Mensajes de error y éxito animados
+- Enlaces directos para llamada automática
 
-## 🔧 Personalización
+## 🔧 Personalización Avanzada
 
 ### Cambiar Información de Contacto
 Edita estos valores en `index.html`:
-- Teléfono: `+34 678 11 94 92`
-- Ubicación: Texto en sección "contacto"
-- Horario: Ajustar según disponibilidad
+- Teléfono: `+34 678 11 94 92` (actualizado en múltiples lugares)
+- Ubicación: `Errenteria, Maria de Lezo, portal 3, 4 derecha`
+- Horario: Lunes (16:45-19:30), Martes (17:30-19:30), Jueves (18:00-19:30)
+- WhatsApp: Enlace flotante y formulario de contacto
 
 ### Modificar Servicios y Precios
 En la sección "services" de `index.html`:
 ```html
-<div class="service-card">
+<div class="service-card" onclick="selectServiceAndNavigate()">
     <div class="service-icon">
-        <i class="fas fa-user"></i>
+        <i class="fas fa-cut"></i>
+        <div class="icon-bg"></div>
     </div>
     <h3>Nombre del Servicio</h3>
-    <p>Descripción del servicio</p>
+    <p>Descripción detallada del servicio</p>
     <div class="price">XX€</div>
+    <div class="service-features">
+        <span><i class="fas fa-check"></i> Característica 1</span>
+        <span><i class="fas fa-check"></i> Característica 2</span>
+        <span><i class="fas fa-check"></i> Característica 3</span>
+    </div>
 </div>
 ```
 
-### Cambiar Colores
+### Cambiar Colores y Tema
 Edita las variables CSS en `styles.css`:
 ```css
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #e74c3c;
-    --accent-color: #3498db;
-    /* ... otros colores */
+    --primary-color: #1a1a1a;
+    --secondary-color: #d4af37;
+    --accent-color: #2c3e50;
+    --success-color: #27ae60;
+    --error-color: #e74c3c;
+    --gradient-primary: linear-gradient(135deg, var(--secondary-color), #f39c12, #d4af37);
+    --transition-smooth: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* ... más variables avanzadas */
 }
 ```
 
-## 📱 Características Técnicas
+## 📱 Características Técnicas Avanzadas
 
-### Validaciones Implementadas
-- ✅ Formato de teléfono español (6xx xxx xxx o 7xx xxx xxx)
-- ✅ No permitir domingos en el calendario
-- ✅ Fecha mínima: día actual
-- ✅ Fecha máxima: 3 meses desde hoy
-- ✅ Campos obligatorios
+### SEO y Optimización
+- ✅ Meta tags optimizados para SEO
+- ✅ Open Graph para redes sociales
+- ✅ Microdatos Schema.org para Google
+- ✅ URL canónica y estructura semántica
+- ✅ Font Poppins preconectada para rendimiento
 
-### Animaciones y Efectos
-- ✅ Scroll suave entre secciones
-- ✅ Hover effects en tarjetas
-- ✅ Animaciones de entrada con Intersection Observer
-- ✅ Modal de confirmación animado
-- ✅ Loading states en botones
+### Validaciones Inteligentes
+- ✅ Validación en tiempo real de formularios
+- ✅ Mensajes de error detallados y animados
+- ✅ No permite fines de semana en calendario
+- ✅ Validación de formato de email
+- ✅ Longitud mínima de campos requerida
+- ✅ Fechas pasadas bloqueadas
 
-### Almacenamiento Local
-- Las citas se guardan en `localStorage` del navegador
-- Los mensajes de contacto también se almacenan localmente
-- **Nota**: Para un sitio real, necesitarías un backend para guardar los datos permanentemente
+### Animaciones y Efectos Premium
+- ✅ Partículas flotantes de fondo
+- ✅ Efecto typing en título hero
+- ✅ Parallax en sección hero
+- ✅ Hover effects 3D en tarjetas
+- ✅ Ripple effects en botones
+- ✅ Loading states con spinners
+- ✅ Scroll animations con Intersection Observer
+- ✅ Modal animations mejoradas
+- ✅ Shimmer effects en galería
+
+### Almacenamiento y Gestión
+- ✅ localStorage con timestamps
+- ✅ Estructura de datos para citas y mensajes
+- ✅ IDs únicos generados automáticamente
+- ✅ Estados de tracking (pending, confirmed)
+- ✅ Preparado para backend integration
 
 ## 🌐 Subir a Internet
 
