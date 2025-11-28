@@ -1462,12 +1462,74 @@ body {
     .contact-grid {
         gap: 2.5rem;
     }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo i {
+        font-size: 1.4rem;
+    }
+    
+    .nav-menu {
+        gap: 2rem;
+    }
+    
+    .hero-scissors {
+        font-size: 2.5rem;
+    }
+    
+    .barber-icon {
+        font-size: 10rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
 }
 
 /* Large Tablets - 768px and below */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+    
+    .header {
+        backdrop-filter: blur(8px);
+    }
+    
+    .navbar {
+        padding: 12px 0;
+    }
+    .nav-container {
+        padding: 0 16px;
+    }
+    
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .logo i {
+        font-size: 1.2rem;
+        margin-right: 8px;
+    }
+    
+    .nav-menu {
+        top: 60px;
+        padding: 1.5rem 0;
+    }
+    
+    .nav-menu a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
     }
     
     .nav-menu {
@@ -1587,12 +1649,26 @@ body {
         font-size: 1.2rem;
     }
     
-    .scroll-to-top {
-        bottom: 20px;
-        left: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1rem;
+    .gallery-image {
+        height: 200px;
+    }
+    
+    .lightbox-content {
+        width: 95vw;
+        height: 80vh;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .lightbox-close {
+        font-size: 30px;
+        right: 20px;
+        top: 15px;
     }
 }
 
@@ -1696,8 +1772,28 @@ body {
         gap: 0.5rem;
     }
     
-    .contact-item i {
-        font-size: 1.2rem;
+    .modal-content {
+        width: 95%;
+        padding: 2rem;
+        margin: 20% auto;
+    }
+    
+    .modal-icon {
+        font-size: 3rem;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-content p {
+        font-size: 0.95rem;
+    }
+    
+    .close {
+        font-size: 1.5rem;
+        right: 15px;
+        top: 15px;
     }
 }
 
@@ -1728,6 +1824,106 @@ body {
     .booking-form,
     .booking-info {
         padding: 1rem;
+    }
+}
+
+/* Mobile and Touch Optimizations */
+@media (max-width: 768px) {
+    /* Touch-friendly tap targets */
+    .btn-primary,
+    .btn-secondary,
+    .btn-submit {
+        min-height: 48px;
+        touch-action: manipulation;
+    }
+    
+    /* Improve touch scrolling */
+    body {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+    
+    /* Better touch feedback */
+    .nav-menu a,
+    .gallery-item,
+    .service-card,
+    .contact-item {
+        -webkit-tap-highlight-color: rgba(212, 175, 55, 0.2);
+        touch-action: manipulation;
+    }
+    
+    /* Prevent zoom on inputs */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px !important;
+        touch-action: manipulation;
+    }
+    
+    /* Better hamburger menu touch */
+    .hamburger {
+        touch-action: manipulation;
+        cursor: pointer;
+    }
+    
+    .hamburger span {
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Landscape mobile optimizations */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 70vh;
+        padding: 1rem 16px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-buttons {
+        margin-bottom: 1rem;
+    }
+    
+    .services,
+    .booking,
+    .gallery,
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* High DPI displays optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-scissors,
+    .barber-icon,
+    .service-icon i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 
